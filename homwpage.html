@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moso Interior</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 48px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9933;
+        }
+
+        header nav a {
+            margin: 0 16px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #ff9933;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: url('images/office.html'); /* Actual image from the website */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 64px 32px;
+            height: 80vh;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 32px;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 16px;
+            z-index: 2;
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 16px;
+            border-radius: 5px;
+        }
+
+        .search-bar select, .search-bar button {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #ff9933;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #e68a00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px 0;
+            background-color: #333;
+            color: #fff;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Moso Interior</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Decorate a beautiful interior for your space</h1>
+        <p>Welcome to Moso Interior</p>
+        <div class="search-bar">
+            <select>
+                <option>Bathroom</option>
+                <option>Living Room</option>
+                <option>Bedroom</option>
+            </select>
+            <select>
+                <option>$500 - $990</option>
+                <option>$1000 - $1990</option>
+                <option>$2000 - $2990</option>
+            </select>
+            <button>Search</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Moso Interior. All rights reserved.</p>
+    </footer>
+</body>
+</html>
