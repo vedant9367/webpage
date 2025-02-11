@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moso Interior</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f8f8;
+            padding: 15px 50px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        .navbar a.active {
+            color: #f1c40f;
+            font-weight: 600;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .logo span {
+            color: #f1c40f;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px;
+        }
+        .text-section {
+            width: 50%;
+        }
+        .text-section h2 {
+            color: #27ae60;
+            font-size: 16px;
+        }
+        .text-section h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .text-section p {
+            color: #777;
+            line-height: 1.6;
+        }
+        .image-section {
+            display: flex;
+            gap: 20px;
+            padding-right: 100px;
+        }
+        .image-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Moso <span>Interior</span></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#" class="active">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <h2>Our Story</h2>
+            <h1>Introducing <strong>Moso</strong></h1>
+            <p>Since 1986, We crafted interior products for better spaces.</p>
+            <p>Moso Interior is a free Bootstrap 5 HTML CSS template for your website. Tooplate is one of the best websites to download 100% free HTML Templates for web designers and developers around the world. Thank you for visiting.</p>
+        </div>
+        <div class="image-section">
+            <img src="images/about1.jpg" max-width="100%">
+            <img src="images/about2.jpg" style= "width: 500px; height: 250px; border-radius: 50%;">
+        </div>
+    </div>
+</body>
+</html>
