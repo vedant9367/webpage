@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotto Job</title>
+    <link rel="stylesheet" href="stlyes.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="contain">
+            <div class="nav-section">
+
+                <a href="#" class="nav-logo">
+                    <img src="images/logo (1).png" alt="logo" width="65" height="65">
+                    <div class="nav-logo2">
+                        <strong>Gotto</strong>
+                        <small>Online Job Portal</small>
+                    </div>
+                </a>
+
+                <div class="nav-ham">
+                    <a href="" onclick="navbar(event)">
+                        <i class="fa fa-bars" aria-hidden="true" style="width: 30px; height: 35px;"></i>
+                    </a>
+                </div>
+                
+                
+                <div class="nav-section2">
+
+                    <div class="navbar-links">
+                        <ul class="nav-items">
+                            <li class=""><a href="#">Homepage</a></li>
+                            <li><a href="#">About Gotto</a></li>
+                            <li class="dropdown">
+                                <a href="dropbtn">Pages
+                                    <img src="Images/down-arrow.png" alt="" width="14" height="14">
+
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="">Job Listing</a>
+                                    <a href="">Job Detail</a>
+
+                                </div>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-btn">
+                            <a href="" class="nav-register">Register</a>
+                            <a href="" class="nav-login">Login</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Home -->
+
+        <section class="home-bg">
+            <div class="bg-over"></div>
+            <div class="contain">
+                <div class="home-box">
+                    <div class="home-box1">
+                        <h6>Are you looking for your dream job?</h6>
+                        <h1>
+                            Online Platform. <br/>
+                            Best Job Portal
+                        </h1>
+                        <a href="">Browser Categories</a>
+                    </div>
+
+                    <div class="home-box2">
+                        <h3>Search your dream job</h3>
+                        <div class="home-input">
+                            <div class="home-input1">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" placeholder="Job Location" name="job-location">
+                            </div>
+
+                            <div class="home-input1">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <input type="text" placeholder="Job Location" name="job-location" required />
+                            </div>
+                        </div>
+                        <button type="sumbit" class="home-btn">Find a job</button>
+                        <div class="home-text">
+                            <span>Popular Keywords:</span>
+                            <a href="">Web design</a>
+                            <a href="">Marketing</a>
+                            <a href="">Customer support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- category -->
+
+
+        <section class="category-bg">
+            <div class="contain">
+                <div class="category-block">
+                    <h2 class="category-text">Browser by Categories</h2>
+                    <div class="category-box">
+
+                        <div class="category-box1">
+                            <a href="" class="category-link">
+                                <i class="fa fa-windows" aria-hidden="true"></i>
+                                <small>Web design</small>
+                                <div class="category-number">
+                                    <span>320</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-box1">
+                            <a href="" class="category-link">
+                                <i class="fa fa-twitch " aria-hidden="true"></i>
+                                <small>Marketing</small>
+                                <div class="category-number">
+                                    <span>180</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-box1">
+                            <a href="" class="category-link">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                <small>Video</small>
+                                <div class="category-number">
+                                    <span>340</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-box1">
+                            <a href="" class="category-link">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <small>Websites</small>
+                                <div class="category-number">
+                                    <span>140</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-box1">
+                            <a href="" class="category-link">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <small>Customer support</small>
+                                <div class="category-number">
+                                    <span>84</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+
+
+        <section>
+            <div class="contain">
+                <div class="about-box">
+                    <div class="about-box1">
+                        <img src="images/julia.jpg" alt="">
+                        <div class="about-information">
+                            <h4>Julia ward</h4>
+                            <p>Investor</p>
+                        </div>
+                    </div>
+                    <div class="about-box2">
+                        <div class="about-text">
+                            <div class="about-text1">
+                                <h2>Introduction Gotto</h2>
+                                <p>Gotto Job is a free website template for job portals. This layout is based on
+                                    Bootstrap 5 CSS framework. Thank you for visiting
+                                    <a href="">Tooplate website</a>. Images are from
+                                    <a href="">FreePik</a> website.
+                                    </p>
+                            </div>
+                            <div class="about-text2">
+                                <a href="" class="about-btn">Get to know us</a>
+                                <a href="" class="about-btn1">Explore Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-box3">
+                        <img src="images/social.jpg" alt="">
+                        <div class="about-social">
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                @Gotto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Job Fetured -->
+
+        <section class="job-bg">
+            <div class="contain">
+                <div class="job-box">
+
+                    <div class="job-box1">
+                        <h2>Featured Jobs</h2>
+                        <p><strong>Over 10k opening jobs</strong>feel free to download and use our free HTML templates from Tooplate website.</p>
+                    </div>
+
+                    <div class="job-box2">
+                        <div class="job-part">
+                            <div class="job-part1">
+                                <img src="images/google.png" alt="">
+                            </div>
+
+                            <div class="job-part2">
+                                <div class="job-text">
+                                    <div class="job-text1">
+                                        <a href="">Technical Lead</a>
+                                    </div>
+                                    <div class="job-text2">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Kuala, Malaysia</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>10 hours ago</p>
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$20k</p>
+                                        <div class="job-btn">
+                                            <a href="" class="job-btn1">Internship</a>
+                                            <a href="" class="job-btn2">Freelance</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <a href=""  class="button">Apply now</a>
+                            </div>
+                        </div>
+
+                        <div class="job-partbg">
+                            <div class="job-part1">
+                                <img src="images/apple.png" alt="">
+                            </div>
+
+                            <div class="job-part2">
+                                <div class="job-text">
+                                    <div class="job-text1">
+                                        <a href="">Business Director</a>
+                                    </div>
+                                    <div class="job-text2">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>California,USA</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 1 day ago</p>
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$90k</p>
+                                        <div class="job-btn">
+                                            <a href="" class="job-btn1">Senior</a>
+                                            <a href="" class="job-btn2">Full Time</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href=""  class="button">Apply now</a>
+                            </div>
+                        </div>
+                        <div class="job-part">
+                            <div class="job-part1">
+                                <img src="images/meta.png" alt="">
+                            </div>
+
+                            <div class="job-part2">
+                                <div class="job-text">
+                                    <div class="job-text1">
+                                        <a href="">HR Manager</a>
+                                    </div>
+                                    <div class="job-text2">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Tower, Paris</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>22 hours ago</p>
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$50k</p>
+                                        <div class="job-btn">
+                                            <a href="" class="job-btn1">Junior</a>
+                                            <a href="" class="job-btn2">Contract</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href=""  class="button">Apply now</a>
+                            </div>
+                        </div>
+
+                        <div class="job-partbg">
+                            <div class="job-part1">
+                                <img src="images/devops.png" alt="">
+                            </div>
+
+                            <div class="job-part2">
+                                <div class="job-text">
+                                    <div class="job-text1">
+                                        <a href="">Dev Ops</a>
+                                    </div>
+                                    <div class="job-text2">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Bangkok, Thailand</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 40 minutes ago</p>
+                                        <p><i class="fa fa-money" aria-hidden="true"></i> $75k - 80k</p>
+                                        <div class="job-btn">
+                                            <a href="" class="job-btn1">Senior</a>
+                                            <a href="" class="job-btn2">Part Time</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href=""  class="button">Apply now</a>
+                            </div>
+                        </div>
+                        <div class="job-part">
+                            <div class="job-part1">
+                                <img src="images/uxdesign.png" alt="">
+                            </div>
+
+                            <div class="job-part2">
+                                <div class="job-text">
+                                    <div class="job-text1">
+                                        <a href="">UX Designer</a>
+                                    </div>
+                                    <div class="job-text2">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok, Thailand</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 2 hours ago</p>
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$100k</p>
+                                        <div class="job-btn">
+                                            <a href="" class="job-btn1">Entry</a>
+                                            <a href="" class="job-btn2">Remote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href=""  class="button">Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-box3">
+                        <ul class="job-pag">
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">Prev</a>
+                            </li>
+                            <li class="job-pagitem ">
+                                <a href="" class="job-paglink job-pagactive">1</a>
+                            </li>
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">2</a>
+                            </li>
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">3</a>
+                            </li>
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">4</a>
+                            </li>
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">5</a>
+                            </li>
+                            <li class="job-pagitem">
+                                <a href="" class="job-paglink">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom -->
+
+        <section>
+         <div class="contain">
+            <div class="bottom-box">
+                <div class="bottom-box1">
+                    <div class="bottom-heading">
+                        <h2>Gotto helps you an easier way to get new job</h2>
+                        <p>You are not allowed to redistribute the template ZIP file on any other template collection website. Please contact us for more info. Thank you.</p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="bottom-text1">
+                            <p>12M</p>
+                            <span>Daily active users</span>
+                        </div>
+
+                        <div class="bottom-text1">
+                            <p>450k</p>
+                            <span>Opening Job</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-box2">
+                    <img src="images/people.jpg" alt="">
+                    <div>
+                        <a href="" class="bottom-youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </section>
+
+        <!-- Recent job -->
+ 
+         
+       
+        <section class="recent-bg">
+            <div class="contain">
+                <div class="recent-part">
+
+                    <div class="recent-part1 ">
+                        <h2>Recent Jobs</h2>
+                        <p><strong>Over 10k opening jobs</strong> Lorem Ipsum dolor sit amet, consectetur adipsicing
+                            kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
+                    </div>
+
+                    <div class="recent-part2">
+                            <div class="recent-thumb">
+                                <div class="recent-box1">
+                                    <a href="">
+                                        <img src="Images/it-professional.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Internship</a>
+                                        <a href="" class="job-btn2">Freelance</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>Technical Lead</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/salesforce.png" alt="">
+                                            </div>
+                                            <p>Salesforce</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1 ">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Kuala, Malaysia</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>10 hours ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$50k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="recent-thumb ">
+                                <div class="recent-box1">
+                                    <a href="">
+                                        <img src="Images/marketing-assistant.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Senior</a>
+                                        <a href="" class="job-btn2">Part Time</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>Marketing Assistant</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/spotify.png" alt="">
+                                            </div>
+                                            <p>Spotify</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>California, USA</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>8 days ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$20k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="recent-thumb ">
+                                <div class="recent-box1">
+                                    <a href="">
+                                        <img src="Images/coding-man.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Junior</a>
+                                        <a href="" class="job-btn2">Contract</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>Programmer</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/twitter.png" alt="">
+                                            </div>
+                                            <p>Twiter</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>California, USA</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>23 hours ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$68k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                          
+                            <div class="recent-thumb">
+                                <div class="recent-box1">
+                                    <a href="">
+                                        <img src="Images/manager.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Junior</a>
+                                        <a href="" class="job-btn2">Contract</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>HR Manager</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/yelp.png" alt="">
+                                            </div>
+                                            <p>Yelp</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>15 hours ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$35k-45k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                            <div class="recent-thumb">
+                                <div class="recent-box1">
+                                    <a href="">
+                                        <img src="Images/paper-analysis.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Junior</a>
+                                        <a href="" class="job-btn2">Contact</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>Sales Representative</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/paypal.png" alt="">
+                                            </div>
+                                            <p>Paypal</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Bangkok, Thailand</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 30 mins ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$20k - 35k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                              
+                            <div class="recent-thumb">
+                                <div class=" recent-box1">
+                                    <a href="">
+                                        <img src="Images/logo-designer.jpg" alt="">
+                                    </a>
+                                    <div class="job-btn recent-btn">
+                                        <a href="" class="job-btn1">Mid level</a>
+                                        <a href="" class="job-btn2">Full time</a>
+                                    </div>
+                                </div>
+
+                                <div class="recent-box2">
+                                    <h4>Graphic Designer</h4>
+                                    <div class="recent-logo">
+                                        <div class="recent-logo1">
+                                            <div class="recent-icon">
+                                                <img src="Images/envato.png" alt="">
+                                            </div>
+                                            <p>Envato</p>
+                                        </div>
+
+                                        <div class="recent-logo2">
+                                            <a href=""><i class="fa fa-bookmark"></i></a>
+                                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="recent-text recent-text1">
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Melbourne, Australia</p>
+                                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 2 days ago</p>
+
+                                    </div>
+                                    <div class="recent-text">
+                                        <p><i class="fa fa-money" aria-hidden="true"></i>$20k</p>
+                                        <a href="" class="button">Apply now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                       
+                    </div>
+
+                    <div class="recent-part3">
+                        <a href="" class="button recent-button ">Browse Job Listings</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Review -->
+
+        <section class="review-bg">
+            <div class="contain">
+                <div class="review-part">
+                    <h2>Happy customers</h2>
+                    <div class="review-part1">
+                        <div class="review-thumb">
+
+                            <div class="review-box1">
+                                <div class="review-text">
+                                    <img src="images/susan.jpg" alt="" class="review-img">
+                                    <div class="review-text1">
+                                        <strong>Susan L</strong>
+                                        <small>Product Manager</small>
+                                    </div>
+                                </div>
+                                  <div class="review-icons">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                  </div>
+                            </div>
+
+                            <div class="review-box2">
+                                <img src="images/left-quote.png" alt="" class="review-img review-quote">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                            </div>
+                        </div>
+
+                        <div class="review-thumb">
+
+                            <div class="review-box1">
+                                <div class="review-text">
+                                    <img src="images/haley.jpg" alt="" class="review-img">
+                                    <div class="review-text1">
+                                        <strong>Haley</strong>
+                                        <small>Sales & Marketing</small>
+                                    </div>
+                                </div>
+                                  <div class="review-icons">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                  </div>
+                            </div>
+
+                            <div class="review-box2">
+                                <img src="images/left-quote.png" alt="" class="review-img review-quote">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="review-part2">
+                        <button role="button" class="review-dot "><span></span></button>
+                        <button role="button" class="review-dot review-dotactive"><span></span></button>
+                        <button role="button" class="review-dot"><span></span></button>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+
+        <section class="cta-bg">
+            <div class="cta-overlay"></div>
+            <div class="contain">
+                <div class="cta-part">
+                    <div class="cta-part1">
+                        <h2>Over 10k opening jobs</h2>
+                        <p>If you are looking for free HTML templates, you may visit Tooplate website. If you need a collection of free templates, you can visit Too CSS website.</p>
+                    </div>
+                    <div class="cta-part2">
+                        <div class="cta-button">
+                            <a href="" class="cta-button1">Create an account</a>
+                            <a href="" class="cta-button2">Post a Job</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <script>
+        function navbar(event) {
+            event.preventDefault(); // Prevents the default anchor click behavior
+            var navbarlinks = document.querySelector(".nav-items");
+
+            if (navbarlinks.style.display === "flex") {
+                navbarlinks.style.display = "none";
+            } else {
+                navbarlinks.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
