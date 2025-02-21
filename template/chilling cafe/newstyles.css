@@ -1,0 +1,186 @@
+body{
+    color: #8c8c8c;
+    background-color: #3a4a58;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+}
+.contain{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Main content */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+    margin: 20px;
+}
+.header i{
+    font-size: 26px;
+}
+.header h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+.main-bg{
+    background-color: white;
+}
+.main-img{
+    background-image: url(images/chilling-cafe-01.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 425px;
+}
+@media only screen and (max-width: 449px) {
+    .main-img {
+        min-height: 300px;
+    }
+}
+
+/* coffee menu */
+
+.section1{
+    padding: 20px 20px 30px;
+}
+.menu-h2{
+    color: #996633;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0px;
+}
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+.tr-bg{
+    background-color: #c4cdd6;
+    height: 50px;
+}
+th {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding: 0 15px;
+}
+td {
+    padding: 10px 15px;
+    text-align: center;
+}
+.td-left{
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: #e5e8ed;
+}
+
+/* Special items */
+
+.special-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.special-part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.special-part1 img{
+    max-width: 180px;
+    width: 100%;
+}
+.special-part1 p{
+    color: #333333;
+    font-size: 18px;
+    margin: 0;
+}
+@media only screen and (max-width: 449px) {
+
+    .special-part1 img{
+        max-width: 350px;
+        
+    }
+}
+
+/* bottom */
+
+.section2{
+    max-width: 490px;
+    margin: 0 auto;
+    padding-top: 0;
+    border-top: 2px solid #8c8c8c;
+    padding: 20px 20px 30px;
+}
+.bottom-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.bottom-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bottom-p {
+    font-size: 16px;
+}
+.bottom-email{
+    color: #333333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.bottom-email:hover{
+    color: #8c8c8c;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #c5ced8;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    transition: all 0.3s;
+}
+.footer-logo:hover{
+   background-color: #333333;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    gap: 2px;
+    margin: 30px 0;
+}
+.footer-link{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.footer-link:hover{
+    color: #8c8c8c;
+}
