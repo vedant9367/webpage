@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moliva</title>
+    <link rel="stylesheet" href="newstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar header -->
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topnav">
+          <div class="head">
+            <a href="" id="phoneLink">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+33 321-654-987</span>
+            </a>
+            <span class="vr"></span>
+            <a href="" id="emailLink">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span>Booking@example.com</span>
+            </a>
+          </div>
+
+          <div class="country">
+            <div class="text">
+              <a href="#" id="languageSelector">
+                <img src="images/en.svg" height="14" />
+                <span>English</span>
+                <i class="fa fa-angle-down"></i>
+              </a>
+              <a href="#" id="currencySelector">
+                <span>USD</span>
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalOverlay" class="modal-overlay">
+      <div id="modalContent" class="modal-content">
+        <button id="closeModalBtn" class="close-btn" aria-label="Close modal">&times;</button>
+        <h2>Select Language and Currency</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Languages</h3>
+            <div class="grid languages-grid">
+              <!-- Language items will be injected here -->
+            </div>
+          </div>
+          <!-- <div class="grid-item">
+            <h3>Currencies</h3>
+            <div class="grid currencies-grid">
+             
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

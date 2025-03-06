@@ -1,0 +1,81 @@
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Grid Container */
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Grid Item */
+.grid-item {
+  width: 48%;
+  text-align: left;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.languages-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.currencies-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item div {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.grid-item div:hover {
+  background-color: #e0e0e0;
+}
