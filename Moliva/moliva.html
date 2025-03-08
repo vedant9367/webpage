@@ -22,7 +22,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
   </head>
   <body>
     <!-- Navbar header -->
@@ -59,13 +58,13 @@
       </div>
     </div>
 
-    <div id="overlay" class="overlay"></div>
-
-    <div id="customAlert" class="custom-alert">
-        <div class="alert-content">
-            <span id="alertMessage"></span>
-        </div>
-        <span id="closeAlert" class="close-alert">&times;</span>
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close-modal-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalGrid" class="modal-grid"></div>
+      </div>
     </div>
     <!-- Navbar  -->
 
@@ -130,57 +129,232 @@
                     <i class="fa fa-angle-down"></i>
                   </a>
                   <div class="dropdown-content">
-                    <ul class="nav-items">
-                      <li class="dropdown">
-                        <a href="">
-                          <span><b>MyAccounts</b></span>
-                        </a>
-                        <a href="">Dashboard</a>
-                        <a href="">Booking</a>
-                        <a href="">Wishlist</a>
-                        <a href="">Settings</a>
-                        <a href="">Security</a>
-                        <a href="">Login</a>
-                        <a href="">Register</a>
-                        <a href="">Forgot password</a>
-                        <a href="">New Password</a>
-                      </li>
-                    </ul>
+                    <div class="mega-menu">
+                      <div class="mega-item">
+                        <ul class="dropdown">
+                          <a href="">
+                            <span><b>MyAccounts</b></span>
+                          </a>
+                          <a href="">Dashboard</a>
+                          <a href="">Booking</a>
+                          <a href="">Wishlist</a>
+                          <a href="">Settings</a>
+                          <a href="">Security</a>
+                          <a href="">Login</a>
+                          <a href="">Register</a>
+                          <a href="">Forgot password</a>
+                          <a href="">New Password</a>
+                        </ul>
+                      </div>
+                      <div class="mega-item">
+                        <ul class="dropdown">
+                          <a href="">
+                            <span><b>Bookings</b></span>
+                          </a>
+                          <a href="">1.Shopping cart</a>
+                          <a href="">2.Checkout</a>
+                          <a href="">3.Completed</a>
+                          <a href="">
+                            <span><b>Other Pages</b></span></a
+                          >
+                          <a href="">About</a>
+                          <a href="">Contact</a>
+                          <a href="">Coming Soon</a>
+                          <a href="">404 page</a>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="navbar-btn">
-            <a href="" class="circle">
-                <i class="fa  fa-shopping-bag"></i>
-                <div class="number">
-                    <span>3</span>
-                </div>
+            <a href="#" class="circle">
+              <i class="fa fa-shopping-bag"></i>
+              <div class="number">
+                <span>3</span>
+              </div>
             </a>
-            <a href="" class="circle">
-                <i class="fa fa-heart-o"></i>
-                <div class="number">
-                    <span>5</span>
-                </div>
+            <a href="#" class="circle">
+              <i class="fa fa-heart-o"></i>
+              <div class="number">
+                <span>5</span>
+              </div>
             </a>
-          </div>
-          <div class="dropdown">
-            <button id="dropdownButton" class="circle circle1">
-              <i class="fas fa-user"></i>
-            </button>
-            <div id="dropdownMenu" class="dropdown-content1">
-              <a href="#">
-                <i class="fa  fa-pencil-square-o"> Register</i>
-              </a>
-              <a href="#">
-                <i class="fa fa-lock"> Login</i>
-              </a>
+            <div class="dropdown">
+              <button id="dropdownButton" class="circle circle1">
+                <i class="fas fa-user"></i>
+              </button>
+              <div id="dropdownMenu" class="dropdown-content1">
+                <a href="#"> <i class="fa fa-pencil-square-o"></i> Register </a>
+                <a href="#"> <i class="fa fa-lock"></i> Login </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Hero section -->
+
+    <div class="slider-container">
+      <div class="slider" id="slider"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>EXPLORE MOLIVA</h2>
+        <h1 id="heading">Experience the unique local culture</h1>
+        <div class="buttons">
+          <button class="explore-btn">EXPLORE →</button>
+          <a href="" class="video-btn">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+      </div>
+      <div class="search-box">
+        <div class="input-group">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" placeholder="Where are you going?" />
+        </div>
+        <div class="custom-dropdown1">
+          <i class="fas fa-calendar-alt"></i>
+          <span class="dropdown-label">Tour date</span>
+          <input type="date" class="date-input" />
+          <i class="fas fa-chevron-down dropdown-arrow"></i>
+        </div>
+
+        <div class="custom-dropdown">
+          <i class="fas fa-list dropdown-icon"></i>
+          <select class="styled-select">
+            <option selected>All categories</option>
+            <option>Ecotourism & Resort</option>
+            <option>Cultural & Foods</option>
+            <option>Explorer & Adventure</option>
+            <option>Festivals & Events</option>
+            <option>Museums & Exhibitions</option>
+            <option>Motor & Bicycles</option>
+            <option>Ships & Boats</option>
+            <option>Hiking & Trekking</option>
+          </select>
+        </div>
+
+        <button class="search-btn"><i class="fas fa-search"></i> SEARCH</button>
+      </div>
+
+      <div class="dots" id="dots"></div>
+      <div class="navigation">
+        <span class="arrow" id="prev">⬅</span>
+        <span class="arrow" id="next">➡</span>
+      </div>
+    </div>
+
+    <!-- Feature Section -->
+
+    <div class="container">
+      <div class="stats-list">
+        <div class="stats-item">
+          <h3 class="stats-number">+250</h3>
+          <p class="stats-desc">
+            Attractive tours <br />
+            around Moliva
+          </p>
+        </div>
+        <div class="stats-item">
+          <h3 class="stats-number">+1.1M</h3>
+          <p class="stats-desc">
+            Clients from <br />
+            around the world
+          </p>
+        </div>
+        <div class="stats-item">
+          <h3 class="stats-number">4.9</h3>
+          <p class="stats-desc">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <br />
+            <span>On Tripadvisor</span>
+          </p>
+        </div>
+        <div class="stats-item">
+          <h3 class="stats-number">+98%</h3>
+          <p class="stats-desc">
+            Our clients <br />
+            are satisfied
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="feature-bg">
+      <div class="container">
+        <div class="feature-sec">
+          <div class="feature-sec1">
+            <div class="image-info">
+              <div class="vertical-title">
+                <small>
+                  <strong class="text-primary">Since 1993</strong>
+                  -
+                  <strong class="text-body">31 Years</strong>
+                  of experience
+                </small>
+              </div>
+              <div class="image-center">
+                <img src="images/feature img.jpg" class="rounded" />
+              </div>
+
+              <div class="top-right">
+                <div class="vertical-award">
+                  <div class="award-content">
+                    <img src="images/award.png" class="rounded" />
+                  </div>
+                  <div class="award-footer">
+                    <small>Tripadvisor</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-sec2">
+            <div class="about-section">
+              <h4 class="subheading">ABOUT US</h4>
+              <h1 class="main-heading">Moliva Travel Agency</h1>
+              <p class="description">
+                Moliva Travel Agency offers unique and memorable tours,
+                providing rich experiences in the beautiful country of Moliva.
+                With a professional and dedicated team, we are committed to
+                bringing you wonderful, safe, and exciting journeys, helping you
+                explore the beauty of the world.
+              </p>
+              <div class="features">
+                <div class="feature">
+                  <i class="fa fa-check-circle"></i>
+                  <span><strong>Great travel experiences</strong></span>
+                </div>
+                <div class="feature">
+                  <i class="fa fa-tags"></i>
+                  <span><strong>Competitive pricing offers</strong></span>
+                </div>
+                <div class="feature">
+                  <i class="fa fa-calendar-alt"></i>
+                  <span><strong>Flexible itinerary options</strong></span>
+                </div>
+                <div class="feature">
+                  <i class="fa fa-star-o"></i>
+                  <span><strong>Leading industry reputation</strong></span>
+                </div>
+              </div>
+              <button class="read-more-btn">READ MORE →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
